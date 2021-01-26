@@ -42,3 +42,5 @@ group :test do
 end
 
 gem "htmlbeautifier", "~> 1.3"
+
+gem "jbuilder", "~> 2.11"
