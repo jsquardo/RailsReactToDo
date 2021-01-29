@@ -32,9 +32,9 @@ class TodoApp extends React.Component {
 	render() {
 		return (
 			<TodoItems>
-				{this.state.todoItems.map((todoItem) => {
-					<TodoItem key={todoItem.id} todoItem={todoItem} />;
-				})}
+				{this.state.todoItems.map((todoItem) => (
+					<TodoItem key={todoItem.id} todoItem={todoItem} />
+				))}
 			</TodoItems>
 		);
 	}
