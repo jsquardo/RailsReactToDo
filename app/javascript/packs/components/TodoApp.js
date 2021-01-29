@@ -21,9 +21,9 @@ class TodoApp extends React.Component {
 		axios
 			.get("/api/v1/todo_items")
 			.then((response) => {
-				// console.log(response.data);
 				const todoItems = response.data;
 				this.setState({ todoItems });
+				console.log(response.data);
 			})
 			.catch((error) => {
 				console.log(error);
